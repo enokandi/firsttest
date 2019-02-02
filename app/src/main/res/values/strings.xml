@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Preferences</string>
+
+
+    <array name="pref_list_entries">
+        <item>مهندسی برق</item>
+        <item>مهندسی کامپیوتر</item>
+        <item>مهندسی صنایع</item>
+        <item>مهندسی شیمی</item>
+        <item>مهندسی مکانیک</item>
+    </array>
+
+    <array name="pref_list_values">
+        <item>Electrical Engineering</item>
+        <item>Computer Engineering</item>
+        <item>Industrial Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>Mechanical Engineering</item>
+    </array>
+
+</resources>

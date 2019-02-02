@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    tools:context="app.mma.preferences.MainActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/label1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="first name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/label1"
+        android:layout_marginLeft="16dp"
+        android:layout_alignBottom="@id/label1"
+        android:id="@+id/input_firstname"
+        android:inputType="textPersonName"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="last name"
+        android:layout_below="@id/label1"
+        android:id="@+id/label2"
+        android:layout_alignLeft="@id/label1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_alignLeft="@id/input_firstname"
+        android:id="@+id/input_lastname"
+        android:layout_alignBottom="@id/label2"
+        android:inputType="textPersonName"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="age"
+        android:layout_below="@id/label2"
+        android:id="@+id/label3"
+        android:layout_alignLeft="@id/label1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_alignLeft="@id/input_firstname"
+        android:layout_alignBottom="@id/label3"
+        android:id="@+id/input_age"
+        android:inputType="number"
+        android:maxLength="3"
+        />
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/label3">
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/btn_save"
+            />
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load"
+            android:id="@+id/btn_load"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btns"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pref_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            />
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

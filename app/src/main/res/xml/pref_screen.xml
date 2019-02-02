@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <PreferenceCategory
+        android:title="General Settings"
+        android:enabled="true"
+        android:order="101">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:title="Notifications"
+            android:summaryOn="اگر خبر مهمی بود بهت اطلاع میدم."
+            android:key="notifications"
+            android:summaryOff="مزاحمت نمیشم."/>
+        <RingtonePreference
+            android:title="Notification Tone"
+            android:key="notification_tone"
+            />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:title="View Images"
+            android:summaryOn="تصاویر رو نمایش میدم"
+            android:summaryOff="خبری از تصاویر نیست"
+            android:key="viewimages" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="User"
+        android:order="102">
+
+        <EditTextPreference
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="User Name"
+            android:key="username"
+            android:inputType="textPersonName"
+            android:summary="اسم خودت رو وارد کن"
+            />
+        <EditTextPreference
+            android:singleLine="false"
+            android:title="bio"
+            android:summary="خودت رو معرفی کن"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="4"
+            android:maxLength="300"
+            android:key="userbio" />
+        <ListPreference
+            android:title="Field"
+            android:entries="@array/pref_list_entries"
+            android:entryValues="@array/pref_list_values"
+            android:key="field" />
+
+        <MultiSelectListPreference
+            android:title="MultiSelect"
+            android:entries="@array/pref_list_values"
+            android:entryValues="@array/pref_list_values"
+            android:key="multiselect_pref"
+            />
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>
